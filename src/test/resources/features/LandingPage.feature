@@ -1,8 +1,5 @@
 Feature: Landing Page
   Scenario: Buy produk
-    When user input username standard_user
-    And user input password secret_sauce
-    And click login button
-    Then user logged in successfully
+    Given user already logged in with username standard_user password secret_sauce and click login button
     When user sort produk by Name (Z to A)
     And select sauce labs backpack
